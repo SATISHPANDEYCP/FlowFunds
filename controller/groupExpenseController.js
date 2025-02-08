@@ -1,4 +1,4 @@
-const GroupExpense = require('../models/GroupExpense');
+const GroupExpense = require('../models/groupExpense');
 
 exports.createGroup = async (req, res) => {
     try {
