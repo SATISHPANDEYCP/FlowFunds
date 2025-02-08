@@ -7,8 +7,6 @@ const UserSchema = new Schema({
     email: { type: String, required: true, unique: true },
     mobile: { type: String, required: true, unique: true },
     password: { type: String, required: true },
-    otpVerified: { type: Boolean, default: false },
-    socialLogin: { type: Boolean, default: false },
     createdAt: { type: Date, default: Date.now }
 });
 
@@ -19,22 +17,13 @@ const ExpenseSchema = new Schema({
     category: { type: String, required: true },
     date: { type: Date, default: Date.now },
     description: { type: String },
-    receiptUrl: { type: String },
     createdAt: { type: Date, default: Date.now }
 });
 
-// Income Schema
+// Income Schema and limit
 const IncomeSchema = new Schema({
     userId: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     amount: { type: Number, required: true },
-    source: { type: String, required: true },
-    date: { type: Date, default: Date.now },
-    createdAt: { type: Date, default: Date.now }
-});
-
-// Budget Schema
-const BudgetSchema = new Schema({
-    userId: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     monthlyLimit: { type: Number, required: true },
     alertThreshold: { type: Number, default: 80 }, // Notify user when 80% of budget is spent
     createdAt: { type: Date, default: Date.now }
@@ -60,10 +49,9 @@ const SharedExpenseSchema = new Schema({
 
 // Export models
 module.exports = {
-    User: mongoose.model('User', UserSchema),
-    Expense: mongoose.model('Expense', ExpenseSchema),
-    Income: mongoose.model('Income', IncomeSchema),
-    Budget: mongoose.model('Budget', BudgetSchema),
-    Group: mongoose.model('Group', GroupSchema),
-    SharedExpense: mongoose.model('SharedExpense', SharedExpenseSchema)
+    UserSchema,
+    ExpenseSchema,
+    IncomeSchema,
+    GroupSchema,
+    SharedExpenseSchema
 };
