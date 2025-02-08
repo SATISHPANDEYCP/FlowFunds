@@ -1,0 +1,19 @@
+{
+  "name": "flowfunds",
+  "version": "1.0.0",
+  "description": "Expense management system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SATISHPANDEYCP/FlowFunds.git"
+  },
+  "author": "Team (Satish,Suryam,Manish)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SATISHPANDEYCP/FlowFunds/issues"
+  },
+  "homepage": "https://github.com/SATISHPANDEYCP/FlowFunds#readme"
+}
