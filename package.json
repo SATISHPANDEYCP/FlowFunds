@@ -17,10 +17,17 @@
   },
   "homepage": "https://github.com/SATISHPANDEYCP/FlowFunds#readme",
   "dependencies": {
+<<<<<<< HEAD
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "mongoose": "^8.10.0",
     "nodemon": "^3.1.9",
     "path": "^0.12.7"
+=======
+    "bcryptjs": "^2.4.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0"
+>>>>>>> ddeca3081d0948f87260c16b44c598c9f11dcc9e
   }
 }
