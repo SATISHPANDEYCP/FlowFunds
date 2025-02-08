@@ -4,7 +4,7 @@
   "description": "Expense management system",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/SATISHPANDEYCP/FlowFunds/issues"
   },
-  "homepage": "https://github.com/SATISHPANDEYCP/FlowFunds#readme"
+  "homepage": "https://github.com/SATISHPANDEYCP/FlowFunds#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0",
+    "nodemon": "^3.1.9",
+    "path": "^0.12.7"
+  }
 }
