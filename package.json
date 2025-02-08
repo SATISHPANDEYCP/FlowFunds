@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/SATISHPANDEYCP/FlowFunds/issues"
   },
-  "homepage": "https://github.com/SATISHPANDEYCP/FlowFunds#readme"
+  "homepage": "https://github.com/SATISHPANDEYCP/FlowFunds#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0"
+  }
 }
